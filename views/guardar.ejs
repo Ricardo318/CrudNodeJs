@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PEDIDO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  </head>
+  <body> 
+    <section class="vh-100" style="background-color:whitesmoke;">
+        <div class="container w-90 p-3">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-primary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <h3 class="mb-5">INGRESAR PRODUCTO</h3>
+                    <form action="/guardar" method="POST">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="producto" name="producto">
+                      <option selected>Seleccione Repuesto</option>
+                      <option value="Pastillas de Freno">Pastillas de Freno</option>
+                      <option value="Balatas">Balatas</option>
+                      <option value="Radiador">Radiador</option>
+                      <option value="Kit de Embrague">Kit de Embrague</option>
+                      <option value="Foco Derecho">Foco Derecho</option>
+                      <option value="Foco Izquierdo">Foco Izquierdo</option>
+                      <option value="Bomba de Agua">Bomba de Agua</option>
+                      <option value="Tapa de Valvulas">Tapa de Valvulas</option>
+                      <option value="Culata">Culata</option>
+                      <option value="Cable de Bujias">Cable de Bujias</option>
+                      <option value="Correa de Distribucion">Correa de Distribucion</option>
+                      <option value="Soporte de Motor">Soporte de Motor</option>
+                      <option value="Kit de Empaquetudas">Kit de Empaquetudas</option>
+                      <option value="Amortiguadores">Amortiguadores</option>
+                    </select><br>
+                    <select class="form-select form-select-lg mb-4" aria-label=".form-select-lg example"id="cantidad" name="cantidad">
+                      <option selected>Seleccione Cantidad</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                    <div class="form-outline mb-4">
+                      <label for="precio" class="form-label">Precio</label>
+                      <input type="text"  class="form-control form-control-lg" id="precio" name="precio" placeholder="$10.000">
+                    </div>
+                  <div class="form-outline mb-4">
+                    <label for="fecha_pedido" class="form-label">Fecha Compra</label>
+                    <input type="date"  class="form-control form-control-lg" id="fecha_pedido" name="fecha_pedido">
+                  </div>
+    
+                  <div class="form-outline mb-4">
+                    <label for="telefono"class="form-label">Telefono</label>
+                    <input type="number"  class="form-control form-control-lg" id="telefono" name="telefono" placeholder="+569123456789">
+                  </div><br>
+                  <a href="/" class="btn btn-danger btn-lg btn-block">Volver</a>
+                  <button class="btn btn-success btn-lg btn-block" type="submit">Guardar</button>
+                 
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
